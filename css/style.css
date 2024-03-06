@@ -34,11 +34,11 @@ header.navbar-container .nav-list ul {
     gap: 2rem 1rem;
 }
 
-header.navbar-container .nav-list ul li {
+header.navbar-container .nav-list li {
     list-style-type: none;
 }
 
-header.navbar-container .nav-list ul li a {
+header.navbar-container .nav-list li a {
     padding: 0.5rem 1.5rem;
     border-radius: 999px;
     text-decoration: none;
@@ -49,7 +49,7 @@ header.navbar-container .nav-list ul li a {
     transition: all 0.2s ease-in-out;
 }
 
-header.navbar-container .nav-list ul li a:hover {
+header.navbar-container .nav-list li:hover a {
     background-color: #425c77;
     color: white;
 }
@@ -160,3 +160,33 @@ main aside .social-media li a {
 main aside .social-media li a:hover {
     color: #89b0d9;
 }
+
+/* Medium devices (768px dan dibawahnya */
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content .content-description title {
+        font-size: 3rem;
+    }
+
+    main .content .content-description  p {
+        font-size: 1rem;
+    }
+
+    main .content .content-image {
+        order: -1;
+    }
+}
+
